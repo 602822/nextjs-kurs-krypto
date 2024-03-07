@@ -13,6 +13,8 @@ export default async function Crypto({
 }) {
   const currentCurrency = (searchParams.currency || "DOGE") as string;
 
+
+
   const chartData = await fetchChartData(currentCurrency);
   const prices = await fetchPrices();
 
